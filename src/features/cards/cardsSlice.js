@@ -7,6 +7,7 @@ const cardsSlice = createSlice({
   },
   reducers: {
     addCard(state, action) {
+      console.log("card action:", action);
       state.cards[action.payload.id] = action.payload;
     }
   }
